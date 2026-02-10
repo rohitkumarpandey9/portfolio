@@ -1,0 +1,110 @@
+/* Common Background for Landing + Skills */
+.hero-section,
+.skills-section {
+  background: linear-gradient(135deg, #1f1c2c, #928dab); /* seamless */
+  color: white;
+}
+
+/* Skills Section */
+.skills-section {
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 3.8rem;
+  margin-bottom: 4rem;
+  color: #ff4081;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 0 3px 10px rgba(255, 64, 129, 0.7);
+}
+
+/* Cards Container */
+.skills-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  justify-items: center;
+  gap: 40px 60px; /* vertical 40px, horizontal 60px */
+  perspective: 1500px;
+}
+
+/* Skill Card - Premium Glassmorphism */
+.skill-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 35px;
+  padding: 4rem 2rem;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+  cursor: pointer;
+  border: 2px solid rgba(255, 64, 129, 0.8);
+  backdrop-filter: blur(18px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Skill Logo */
+.skill-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 0.7rem; /* tight vertical spacing */
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+/* Skill Name */
+.skill-card h3 {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: white;
+  line-height: 1.2;
+  text-shadow: 0 4px 12px rgba(255, 64, 129, 0.8);
+}
+
+/* Hover Effect - 3D tilt + glow + scale */
+.skill-card:hover {
+  transform: rotateY(12deg) rotateX(6deg) scale(1.25);
+  box-shadow: 0 35px 70px rgba(255, 64, 129, 0.9),
+              0 0 40px rgba(255, 64, 129, 0.7);
+  border-color: #ff4081;
+}
+
+.skill-card:hover img {
+  transform: scale(1.4) rotate(-5deg);
+  filter: drop-shadow(0 0 15px #ff4081);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .skills-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 50px;
+  }
+  .skill-card {
+    width: 220px;
+    padding: 3.5rem 1.5rem;
+  }
+  .skill-card img {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 576px) {
+  .skills-cards {
+    grid-template-columns: 1fr;
+    gap: 25px 0;
+  }
+  .skill-card {
+    width: 200px;
+    padding: 3rem 1.2rem;
+  }
+  .skill-card img {
+    width: 80px;
+    height: 80px;
+  }
+}
