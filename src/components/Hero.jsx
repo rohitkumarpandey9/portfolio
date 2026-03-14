@@ -65,7 +65,7 @@ export default function Hero() {
               View My Work →
             </Link>
             <a
-              href="public\resume\Rohitkumar.pdf"
+              href="/resume/Rohitkumar.pdf"
               download
               className="btn-outline hover-target"
             >
@@ -111,7 +111,7 @@ export default function Hero() {
           <div className="photo-ring2" />
           <div className="photo-card">
             <img
-              src="public\images\ProfilePhoto.jpeg"
+              src="/images/ProfilePhoto.jpeg"
               alt="Rohit Kumar Pandey"
               className="hero-photo"
               onError={(e) => {
