@@ -1,0 +1,26 @@
+.edu-inner { max-width: 1200px; margin: 0 auto; }
+.edu-card {
+  display: flex; gap: 2rem; align-items: flex-start;
+  max-width: 760px; padding: 2.2rem 2.5rem;
+  background: var(--surface); border: 1px solid var(--border);
+  border-left: 3px solid var(--c1);
+  border-radius: 16px; cursor: none;
+  transition: all .3s;
+}
+.edu-card:hover {
+  transform: translateX(8px);
+  border-color: rgba(0,255,135,0.3);
+  box-shadow: -8px 0 40px rgba(0,255,135,0.07);
+}
+.edu-year {
+  flex-shrink: 0; width: 64px; height: 64px;
+  background: rgba(0,255,135,0.08);
+  border: 1px solid rgba(0,255,135,0.2);
+  border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.1rem; color: var(--c1); letter-spacing: 1px;
+}
+.edu-degree { font-size: 1.1rem; font-weight: 600; margin-bottom: .4rem; }
+.edu-college { color: var(--c2); font-size: .9rem; margin-bottom: .3rem; }
+.edu-meta { color: var(--muted); font-size: .82rem; }

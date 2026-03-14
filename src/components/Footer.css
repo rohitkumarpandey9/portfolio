@@ -1,0 +1,19 @@
+.footer {
+  padding: 1.8rem 6%;
+  border-top: 1px solid var(--border);
+  background: var(--bg);
+}
+.footer-inner {
+  max-width: 1200px; margin: 0 auto;
+  display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: .5rem;
+}
+.footer-logo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.3rem; letter-spacing: 3px;
+  background: linear-gradient(135deg, var(--c1), var(--c2));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+}
+.footer-mid { color: var(--muted); font-size: .82rem; }
+.footer-mid span { color: var(--c1); }
+.footer-right { color: var(--muted); font-size: .82rem; }
